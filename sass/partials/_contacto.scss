@@ -1,0 +1,26 @@
+// Formulario de contacto
+form {
+    label {
+        color: $primary-color; // Azul oscuro
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+        border: 2px solid $primary-color; // Borde azul oscuro
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        &:focus {
+            outline: none;
+            border-color: #007bff; // Borde azul
+            @include shadow(0, 0, 5px, rgba(0, 123, 255, 0.5)); // Sombra azul suave
+        }
+    }
+
+    button[type="submit"] {
+        @include button-styles();
+    }
+}

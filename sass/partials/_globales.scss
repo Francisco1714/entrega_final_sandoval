@@ -1,0 +1,143 @@
+// Estilos globales
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color; // Azul oscuro
+    padding: 20px;
+    color: #fff;
+    @include shadow(0px, 2px, 5px, rgba(0, 0, 0, 0.1)); // Sombra suave
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 70px;
+    font-family: Arial, sans-serif;
+    background-color: $background-color; // Color de fondo suave
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.logo {
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    span {
+        font-size: 18px;
+        color: $secondary-color; // Color dorado
+    }
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+.navegacion {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    li {
+        margin-left: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $secondary-color; // Cambia el color al dorado al pasar el ratón
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacion {
+        margin-top: 20px;
+
+        ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    }
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+// Footer
+footer {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center; // Asegura que el texto esté centrado
+
+    .contenedor-footer {
+        position: relative;
+        width: 100%;
+
+        .redes-sociales {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 10px;
+
+                &:hover {
+                    color: $secondary-color; // Cambia el color al dorado al pasar el ratón
+                }
+            }
+        }
+
+        p {
+            margin: 0;
+            padding-top: 40px; // Añade un poco de espacio arriba del texto para los iconos
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.description {
+    color: black;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+// Ubicación Valdivia
+.ubicacion {
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    h2 {
+        color: black;
+        text-align: center;
+    }
+
+    p {
+        padding: 20px;
+        line-height: 1.6;
+    }
+}
+
+// Mapa Valdivia
+.mapa {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+
+    iframe {
+        width: 80%;
+        max-width: 800px;
+        height: 450px;
+    }
+}

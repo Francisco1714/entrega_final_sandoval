@@ -1,0 +1,94 @@
+@import '_mixins';
+.card {
+    @include card-styles();
+
+    h2 {
+        margin-top: 0;
+    }
+}
+
+// Estilos para la tarjeta de historia
+.card.historia {
+    background-image: url(../img/cat-8415620_1280.jpg);
+    background-size: cover;
+    color: #fff;
+    @include justified-text-with-shadow();
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+// Estilos para la tarjeta de turismo
+.card.turismo {
+    background-image: url(../img/woman-8587090_1280.png);
+    background-size: cover;
+    color: #fff;
+    @include justified-text-with-shadow();
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+// Estilos para la tarjeta de gastronomía
+.card.gastronomia {
+    background-image: url(../img/gorro_chef.jpg); // Fondo naranja
+    background-size: cover;
+    color: #fff; // Texto blanco
+    @include justified-text-with-shadow();
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+// Estilos para la tarjeta de contacto
+.card.contacto {
+    background-image: url(../img/contactanos.jpg); // Fondo azul
+    background-size: cover;
+    color: #fff; // Texto blanco
+    @include justified-text-with-shadow();
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+// Tarjetas Gastronomía
+.card {
+    text-align: justify;
+    margin-bottom: 20px;
+    position: relative;
+
+    &-title {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+    }
+}
+
+// Iconos
+.card-icono {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    border-radius: 50%;
+
+    i {
+        color: #fff;
+        font-size: 24px;
+    }
+}
+// Iconos
+.card-icono {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    border-radius: 50%;
+
+    i {
+        color: #fff;
+        font-size: 24px;
+    }
+}
